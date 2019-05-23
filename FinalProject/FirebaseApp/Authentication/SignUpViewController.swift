@@ -257,7 +257,7 @@ class SignUpViewController:UIViewController, UITextFieldDelegate {
     
     func saveProfile(username:String, profileImageURL:URL, completion: @escaping ((_ success:Bool)->())) {
         guard let uid = Auth.auth().currentUser?.uid else { return }
-        let databaseRef = Database.database().reference().child("users/\(uid)")
+        let databaseRef = Database.database().reference().child("users/profile/\(uid)")
         
         let userObject = [
             "username": username,
