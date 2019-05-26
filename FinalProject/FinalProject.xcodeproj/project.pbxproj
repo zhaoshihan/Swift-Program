@@ -13,8 +13,8 @@
 		B02F5958213334DE00D138B9 /* LoadingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F5956213334DE00D138B9 /* LoadingCell.swift */; };
 		B0330FFE2031700E00FE2203 /* ImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0330FFD2031700E00FE2203 /* ImageService.swift */; };
 		B07E770F222764A800DF0BA8 /* SeeNewPostsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07E770E222764A800DF0BA8 /* SeeNewPostsButton.swift */; };
-		B08C14E1202CDF9B0061819B /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08C14DF202CDF9B0061819B /* PostTableViewCell.swift */; };
-		B08C14E2202CDF9B0061819B /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B08C14E0202CDF9B0061819B /* PostTableViewCell.xib */; };
+		B08C14E1202CDF9B0061819B /* StudentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08C14DF202CDF9B0061819B /* StudentTableViewCell.swift */; };
+		B08C14E2202CDF9B0061819B /* StudentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B08C14E0202CDF9B0061819B /* StudentTableViewCell.xib */; };
 		B08C14E8202CE5EF0061819B /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08C14E7202CE5EF0061819B /* Post.swift */; };
 		B08C14EA202E55C30061819B /* NewPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08C14E9202E55C30061819B /* NewPostViewController.swift */; };
 		B08C14EC202E70080061819B /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08C14EB202E70080061819B /* UserService.swift */; };
@@ -23,7 +23,7 @@
 		B0E78FDE2024FDEF002DA8AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0E78FDC2024FDEF002DA8AF /* Main.storyboard */; };
 		B0E78FE02024FDEF002DA8AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0E78FDF2024FDEF002DA8AF /* Assets.xcassets */; };
 		B0E78FE32024FDEF002DA8AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0E78FE12024FDEF002DA8AF /* LaunchScreen.storyboard */; };
-		B0E78FF92025025E002DA8AF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E78FF82025025E002DA8AF /* HomeViewController.swift */; };
+		B0E78FF92025025E002DA8AF /* StudentHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E78FF82025025E002DA8AF /* StudentHomeViewController.swift */; };
 		B0E78FFB202504E1002DA8AF /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E78FFA202504E1002DA8AF /* InitialViewController.swift */; };
 		B0E79001202504FE002DA8AF /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E78FFC202504FD002DA8AF /* SignUpViewController.swift */; };
 		B0E79002202504FE002DA8AF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E78FFD202504FD002DA8AF /* LoginViewController.swift */; };
@@ -42,8 +42,8 @@
 		B02F5956213334DE00D138B9 /* LoadingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingCell.swift; sourceTree = "<group>"; };
 		B0330FFD2031700E00FE2203 /* ImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageService.swift; sourceTree = "<group>"; };
 		B07E770E222764A800DF0BA8 /* SeeNewPostsButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeeNewPostsButton.swift; sourceTree = "<group>"; };
-		B08C14DF202CDF9B0061819B /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
-		B08C14E0202CDF9B0061819B /* PostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
+		B08C14DF202CDF9B0061819B /* StudentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentTableViewCell.swift; sourceTree = "<group>"; };
+		B08C14E0202CDF9B0061819B /* StudentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StudentTableViewCell.xib; sourceTree = "<group>"; };
 		B08C14E7202CE5EF0061819B /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		B08C14E9202E55C30061819B /* NewPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPostViewController.swift; sourceTree = "<group>"; };
 		B08C14EB202E70080061819B /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
@@ -54,7 +54,7 @@
 		B0E78FDF2024FDEF002DA8AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B0E78FE22024FDEF002DA8AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B0E78FE42024FDEF002DA8AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B0E78FF82025025E002DA8AF /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		B0E78FF82025025E002DA8AF /* StudentHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentHomeViewController.swift; sourceTree = "<group>"; };
 		B0E78FFA202504E1002DA8AF /* InitialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
 		B0E78FFC202504FD002DA8AF /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		B0E78FFD202504FD002DA8AF /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -128,10 +128,10 @@
 		B08C14F1203163F90061819B /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				B0E78FF82025025E002DA8AF /* HomeViewController.swift */,
+				B0E78FF82025025E002DA8AF /* StudentHomeViewController.swift */,
 				B08C14E9202E55C30061819B /* NewPostViewController.swift */,
-				B08C14DF202CDF9B0061819B /* PostTableViewCell.swift */,
-				B08C14E0202CDF9B0061819B /* PostTableViewCell.xib */,
+				B08C14DF202CDF9B0061819B /* StudentTableViewCell.swift */,
+				B08C14E0202CDF9B0061819B /* StudentTableViewCell.xib */,
 				B02F5956213334DE00D138B9 /* LoadingCell.swift */,
 				B07E770E222764A800DF0BA8 /* SeeNewPostsButton.swift */,
 			);
@@ -253,7 +253,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B0E78FE32024FDEF002DA8AF /* LaunchScreen.storyboard in Resources */,
-				B08C14E2202CDF9B0061819B /* PostTableViewCell.xib in Resources */,
+				B08C14E2202CDF9B0061819B /* StudentTableViewCell.xib in Resources */,
 				479D50A82296A5B700C6C133 /* GoogleService-Info.plist in Resources */,
 				B0E78FE02024FDEF002DA8AF /* Assets.xcassets in Resources */,
 				B0E78FDE2024FDEF002DA8AF /* Main.storyboard in Resources */,
@@ -317,7 +317,7 @@
 				B0E79001202504FE002DA8AF /* SignUpViewController.swift in Sources */,
 				B0E78FFB202504E1002DA8AF /* InitialViewController.swift in Sources */,
 				B0E79004202504FE002DA8AF /* HelperExtensions.swift in Sources */,
-				B0E78FF92025025E002DA8AF /* HomeViewController.swift in Sources */,
+				B0E78FF92025025E002DA8AF /* StudentHomeViewController.swift in Sources */,
 				479D50AA2296E67900C6C133 /* Student.swift in Sources */,
 				B0E79003202504FE002DA8AF /* MenuViewController.swift in Sources */,
 				B0E78FD92024FDEF002DA8AF /* AppDelegate.swift in Sources */,
@@ -325,7 +325,7 @@
 				B02F5958213334DE00D138B9 /* LoadingCell.swift in Sources */,
 				B08C14EC202E70080061819B /* UserService.swift in Sources */,
 				B0E79005202504FE002DA8AF /* RoundedWhiteButton.swift in Sources */,
-				B08C14E1202CDF9B0061819B /* PostTableViewCell.swift in Sources */,
+				B08C14E1202CDF9B0061819B /* StudentTableViewCell.swift in Sources */,
 				B08C14E8202CE5EF0061819B /* Post.swift in Sources */,
 				B07E770F222764A800DF0BA8 /* SeeNewPostsButton.swift in Sources */,
 				B0330FFE2031700E00FE2203 /* ImageService.swift in Sources */,

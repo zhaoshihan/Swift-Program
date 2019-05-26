@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PostTableViewCell: UITableViewCell {
+class StudentTableViewCell: UITableViewCell {
 
     @IBOutlet weak var usernameLabel: UILabel!
     @IBOutlet weak var profileImageView: UIImageView!
@@ -31,25 +31,25 @@ class PostTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    weak var post:Post?
+    weak var student:Student?
     
-    func set(post:Post) {
-        self.post = post
+    func set(student:Student) {
+        self.student = student
         
         self.profileImageView.image = nil
-        ImageService.getImage(withURL: post.author.photoURL) { image, url in
-            guard let _post = self.post else { return }
-            if _post.author.photoURL.absoluteString == url.absoluteString {
-                self.profileImageView.image = image
-            } else {
-                print("Not the right image")
-            }
-            
-        }
+//        ImageService.getImage(withURL: post.author.photoURL) { image, url in
+//            guard let _post = self.post else { return }
+//            if _post.author.photoURL.absoluteString == url.absoluteString {
+//                self.profileImageView.image = image
+//            } else {
+//                print("Not the right image")
+//            }
+//
+//        }
         
-        usernameLabel.text = post.author.username
-        postTextLabel.text = post.text
-        subtitleLabel.text = post.createdAt.calenderTimeSinceNow()
+        usernameLabel.text = student.studentName
+        subtitleLabel.text = student.academy
+        postTextLabel.text = student.telephone
     }
     
     

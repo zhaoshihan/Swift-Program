@@ -29,4 +29,21 @@ class Student {
         self.email = email
         self.grades = grades
     }
+    
+    static func parse(_ key:String, _ data:[String:Any]) -> Student? {
+        if let grades = data["grades"] as? [String:Any],
+            let studentName = data["studentName"] as? String,
+            let studentID = data["studentID"] as? String,
+            let academy = data["academy"] as? String,
+            let IDCard = data["IDCard"] as? String,
+            let birthplace = data["birthplace"] as? String,
+            let telephone = data["telephone"] as? String,
+            let email = data["email"] as? String{
+            
+            return Student(studentName: studentName, studentID: studentID, academy: academy, IDCard: IDCard, birthplace: birthplace, telephone: telephone, email: email, grades: grades)
+            
+        }
+        
+        return nil
+    }
 }

@@ -11,7 +11,7 @@ import UIKit
 import Firebase
 
 protocol NewPostVCDelegate {
-    func didUploadPost(withID id:String)
+    func didUploadPost(withStudentName studentName:String)
 }
 
 class NewPostViewController:UIViewController, UITextViewDelegate {
@@ -29,7 +29,7 @@ class NewPostViewController:UIViewController, UITextViewDelegate {
         guard let userProfile = UserService.currentUserProfile else { return }
         // Firebase code here
         
-        let postRef = Database.database().reference().child("posts").childByAutoId()
+        let postRef = Database.database().reference().child("students").childByAutoId()
         
         let postObject = [
             "author": [
@@ -43,7 +43,7 @@ class NewPostViewController:UIViewController, UITextViewDelegate {
         
         postRef.setValue(postObject, withCompletionBlock: { error, ref in
             if error == nil {
-                self.delegate?.didUploadPost(withID: ref.key ?? "")
+                self.delegate?.didUploadPost(withStudentName: ref.key ?? "")
                 self.dismiss(animated: true, completion: nil)
             } else {
                 // Handle the error
