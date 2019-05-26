@@ -49,7 +49,10 @@ class StudentTableViewCell: UITableViewCell {
         
         usernameLabel.text = student.studentName
         subtitleLabel.text = student.academy
-        postTextLabel.text = student.telephone
+        let gradesString = (student.grades.compactMap({ (key, value) -> String in
+            return "\(key) = \(value)"
+        }) as Array).joined(separator: "\n")
+        postTextLabel.text = gradesString
     }
     
     

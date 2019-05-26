@@ -17,7 +17,7 @@ class StudentHomeViewController:UIViewController, UITableViewDelegate, UITableVi
 //    var students = [Student]()
     var students = [
         Student(studentName: "zhangsan", studentID: "101", academy: "Computer", IDCard: "1234567890", birthplace: "Hubei", telephone: "12345678", email: "zhangsan@gmail.com", grades: ["Math":"100"]),
-        Student(studentName: "lisi", studentID: "102", academy: "Literature", IDCard: "1111111111", birthplace: "Hunan", telephone: "87654321", email: "lisi@126.com", grades: [:])
+        Student(studentName: "lisi", studentID: "102", academy: "Literature", IDCard: "1111111111", birthplace: "Hunan", telephone: "87654321", email: "lisi@126.com", grades: ["Chinese":"10", "Math":"20"])
     ]
     
     override func viewDidLoad() {
