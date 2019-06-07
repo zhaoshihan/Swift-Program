@@ -7,23 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4761621522AA12D300B423BA /* ScoreTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4761620B22AA12D300B423BA /* ScoreTableViewCell.xib */; };
+		4761621622AA12D300B423BA /* ScoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4761620C22AA12D300B423BA /* ScoreTableViewCell.swift */; };
+		4761621722AA12D300B423BA /* StudentHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4761620E22AA12D300B423BA /* StudentHomeViewController.swift */; };
+		4761621822AA12D300B423BA /* NewPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4761620F22AA12D300B423BA /* NewPostViewController.swift */; };
+		4761621922AA12D300B423BA /* StudentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4761621022AA12D300B423BA /* StudentTableViewCell.swift */; };
+		4761621A22AA12D300B423BA /* StudentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4761621122AA12D300B423BA /* StudentTableViewCell.xib */; };
+		4761621B22AA12D300B423BA /* SeeNewPostsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4761621222AA12D300B423BA /* SeeNewPostsButton.swift */; };
+		4761621C22AA12D300B423BA /* LoadingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4761621322AA12D300B423BA /* LoadingCell.swift */; };
+		4761621E22AA1BCF00B423BA /* ScoreHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4761621D22AA1BCF00B423BA /* ScoreHomeViewController.swift */; };
 		479D50A82296A5B700C6C133 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 479D50A72296A5B700C6C133 /* GoogleService-Info.plist */; };
 		479D50AA2296E67900C6C133 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479D50A92296E67900C6C133 /* Student.swift */; };
 		6FF492AF8D80C0543763C433 /* Pods_FinalProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 850DE62001D4CE697CB18C59 /* Pods_FinalProject.framework */; };
-		B02F5958213334DE00D138B9 /* LoadingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02F5956213334DE00D138B9 /* LoadingCell.swift */; };
 		B0330FFE2031700E00FE2203 /* ImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0330FFD2031700E00FE2203 /* ImageService.swift */; };
-		B07E770F222764A800DF0BA8 /* SeeNewPostsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07E770E222764A800DF0BA8 /* SeeNewPostsButton.swift */; };
-		B08C14E1202CDF9B0061819B /* StudentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08C14DF202CDF9B0061819B /* StudentTableViewCell.swift */; };
-		B08C14E2202CDF9B0061819B /* StudentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B08C14E0202CDF9B0061819B /* StudentTableViewCell.xib */; };
 		B08C14E8202CE5EF0061819B /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08C14E7202CE5EF0061819B /* Post.swift */; };
-		B08C14EA202E55C30061819B /* NewPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08C14E9202E55C30061819B /* NewPostViewController.swift */; };
 		B08C14EC202E70080061819B /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08C14EB202E70080061819B /* UserService.swift */; };
 		B08C14EE202E703C0061819B /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08C14ED202E703C0061819B /* UserProfile.swift */; };
 		B0E78FD92024FDEF002DA8AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E78FD82024FDEF002DA8AF /* AppDelegate.swift */; };
 		B0E78FDE2024FDEF002DA8AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0E78FDC2024FDEF002DA8AF /* Main.storyboard */; };
 		B0E78FE02024FDEF002DA8AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0E78FDF2024FDEF002DA8AF /* Assets.xcassets */; };
 		B0E78FE32024FDEF002DA8AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0E78FE12024FDEF002DA8AF /* LaunchScreen.storyboard */; };
-		B0E78FF92025025E002DA8AF /* StudentHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E78FF82025025E002DA8AF /* StudentHomeViewController.swift */; };
 		B0E78FFB202504E1002DA8AF /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E78FFA202504E1002DA8AF /* InitialViewController.swift */; };
 		B0E79001202504FE002DA8AF /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E78FFC202504FD002DA8AF /* SignUpViewController.swift */; };
 		B0E79002202504FE002DA8AF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E78FFD202504FD002DA8AF /* LoginViewController.swift */; };
@@ -34,18 +37,22 @@
 
 /* Begin PBXFileReference section */
 		031716DF5C6C56BA7EB68359 /* Pods-FinalProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinalProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-FinalProject/Pods-FinalProject.release.xcconfig"; sourceTree = "<group>"; };
+		4761620B22AA12D300B423BA /* ScoreTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScoreTableViewCell.xib; sourceTree = "<group>"; };
+		4761620C22AA12D300B423BA /* ScoreTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreTableViewCell.swift; sourceTree = "<group>"; };
+		4761620E22AA12D300B423BA /* StudentHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentHomeViewController.swift; sourceTree = "<group>"; };
+		4761620F22AA12D300B423BA /* NewPostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewPostViewController.swift; sourceTree = "<group>"; };
+		4761621022AA12D300B423BA /* StudentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentTableViewCell.swift; sourceTree = "<group>"; };
+		4761621122AA12D300B423BA /* StudentTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StudentTableViewCell.xib; sourceTree = "<group>"; };
+		4761621222AA12D300B423BA /* SeeNewPostsButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeeNewPostsButton.swift; sourceTree = "<group>"; };
+		4761621322AA12D300B423BA /* LoadingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingCell.swift; sourceTree = "<group>"; };
+		4761621D22AA1BCF00B423BA /* ScoreHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreHomeViewController.swift; sourceTree = "<group>"; };
 		479D50A72296A5B700C6C133 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		479D50A92296E67900C6C133 /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
 		56ECF11A9B5693C23C7F0FE7 /* Pods-FinalProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinalProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FinalProject/Pods-FinalProject.debug.xcconfig"; sourceTree = "<group>"; };
 		6580728F4CE95C2C81CE978D /* Pods-FirebaseApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FirebaseApp/Pods-FirebaseApp.debug.xcconfig"; sourceTree = "<group>"; };
 		850DE62001D4CE697CB18C59 /* Pods_FinalProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FinalProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B02F5956213334DE00D138B9 /* LoadingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingCell.swift; sourceTree = "<group>"; };
 		B0330FFD2031700E00FE2203 /* ImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageService.swift; sourceTree = "<group>"; };
-		B07E770E222764A800DF0BA8 /* SeeNewPostsButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeeNewPostsButton.swift; sourceTree = "<group>"; };
-		B08C14DF202CDF9B0061819B /* StudentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentTableViewCell.swift; sourceTree = "<group>"; };
-		B08C14E0202CDF9B0061819B /* StudentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StudentTableViewCell.xib; sourceTree = "<group>"; };
 		B08C14E7202CE5EF0061819B /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
-		B08C14E9202E55C30061819B /* NewPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPostViewController.swift; sourceTree = "<group>"; };
 		B08C14EB202E70080061819B /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		B08C14ED202E703C0061819B /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
 		B0E78FD52024FDEF002DA8AF /* FinalProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinalProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -54,7 +61,6 @@
 		B0E78FDF2024FDEF002DA8AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B0E78FE22024FDEF002DA8AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B0E78FE42024FDEF002DA8AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B0E78FF82025025E002DA8AF /* StudentHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentHomeViewController.swift; sourceTree = "<group>"; };
 		B0E78FFA202504E1002DA8AF /* InitialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
 		B0E78FFC202504FD002DA8AF /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		B0E78FFD202504FD002DA8AF /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -82,6 +88,29 @@
 				850DE62001D4CE697CB18C59 /* Pods_FinalProject.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4761620922AA12D300B423BA /* GradesHome */ = {
+			isa = PBXGroup;
+			children = (
+				4761620B22AA12D300B423BA /* ScoreTableViewCell.xib */,
+				4761620C22AA12D300B423BA /* ScoreTableViewCell.swift */,
+				4761621D22AA1BCF00B423BA /* ScoreHomeViewController.swift */,
+			);
+			path = GradesHome;
+			sourceTree = "<group>";
+		};
+		4761620D22AA12D300B423BA /* StudentsHome */ = {
+			isa = PBXGroup;
+			children = (
+				4761620E22AA12D300B423BA /* StudentHomeViewController.swift */,
+				4761620F22AA12D300B423BA /* NewPostViewController.swift */,
+				4761621022AA12D300B423BA /* StudentTableViewCell.swift */,
+				4761621122AA12D300B423BA /* StudentTableViewCell.xib */,
+				4761621222AA12D300B423BA /* SeeNewPostsButton.swift */,
+				4761621322AA12D300B423BA /* LoadingCell.swift */,
+			);
+			path = StudentsHome;
 			sourceTree = "<group>";
 		};
 		A0C761416E3732FA4F5714B6 /* Pods */ = {
@@ -123,19 +152,6 @@
 				B0E78FFC202504FD002DA8AF /* SignUpViewController.swift */,
 			);
 			path = Authentication;
-			sourceTree = "<group>";
-		};
-		B08C14F1203163F90061819B /* Home */ = {
-			isa = PBXGroup;
-			children = (
-				B0E78FF82025025E002DA8AF /* StudentHomeViewController.swift */,
-				B08C14E9202E55C30061819B /* NewPostViewController.swift */,
-				B08C14DF202CDF9B0061819B /* StudentTableViewCell.swift */,
-				B08C14E0202CDF9B0061819B /* StudentTableViewCell.xib */,
-				B02F5956213334DE00D138B9 /* LoadingCell.swift */,
-				B07E770E222764A800DF0BA8 /* SeeNewPostsButton.swift */,
-			);
-			path = Home;
 			sourceTree = "<group>";
 		};
 		B08C14F2203164080061819B /* Storyboards */ = {
@@ -180,8 +196,9 @@
 				B0E78FDF2024FDEF002DA8AF /* Assets.xcassets */,
 				B08C14E6202CE5E20061819B /* Models */,
 				B08C14EF203163AC0061819B /* Services */,
+				4761620922AA12D300B423BA /* GradesHome */,
+				4761620D22AA12D300B423BA /* StudentsHome */,
 				B08C14F0203163E10061819B /* Authentication */,
-				B08C14F1203163F90061819B /* Home */,
 				B08C14F2203164080061819B /* Storyboards */,
 				B08C14FA20316D1A0061819B /* User Interface */,
 				B0E78FFF202504FD002DA8AF /* HelperExtensions.swift */,
@@ -252,11 +269,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4761621522AA12D300B423BA /* ScoreTableViewCell.xib in Resources */,
 				B0E78FE32024FDEF002DA8AF /* LaunchScreen.storyboard in Resources */,
-				B08C14E2202CDF9B0061819B /* StudentTableViewCell.xib in Resources */,
 				479D50A82296A5B700C6C133 /* GoogleService-Info.plist in Resources */,
 				B0E78FE02024FDEF002DA8AF /* Assets.xcassets in Resources */,
 				B0E78FDE2024FDEF002DA8AF /* Main.storyboard in Resources */,
+				4761621A22AA12D300B423BA /* StudentTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,22 +331,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				B08C14EE202E703C0061819B /* UserProfile.swift in Sources */,
-				B08C14EA202E55C30061819B /* NewPostViewController.swift in Sources */,
 				B0E79001202504FE002DA8AF /* SignUpViewController.swift in Sources */,
+				4761621722AA12D300B423BA /* StudentHomeViewController.swift in Sources */,
+				4761621622AA12D300B423BA /* ScoreTableViewCell.swift in Sources */,
+				4761621B22AA12D300B423BA /* SeeNewPostsButton.swift in Sources */,
 				B0E78FFB202504E1002DA8AF /* InitialViewController.swift in Sources */,
+				4761621822AA12D300B423BA /* NewPostViewController.swift in Sources */,
 				B0E79004202504FE002DA8AF /* HelperExtensions.swift in Sources */,
-				B0E78FF92025025E002DA8AF /* StudentHomeViewController.swift in Sources */,
 				479D50AA2296E67900C6C133 /* Student.swift in Sources */,
+				4761621E22AA1BCF00B423BA /* ScoreHomeViewController.swift in Sources */,
 				B0E79003202504FE002DA8AF /* MenuViewController.swift in Sources */,
 				B0E78FD92024FDEF002DA8AF /* AppDelegate.swift in Sources */,
 				B0E79002202504FE002DA8AF /* LoginViewController.swift in Sources */,
-				B02F5958213334DE00D138B9 /* LoadingCell.swift in Sources */,
 				B08C14EC202E70080061819B /* UserService.swift in Sources */,
+				4761621922AA12D300B423BA /* StudentTableViewCell.swift in Sources */,
 				B0E79005202504FE002DA8AF /* RoundedWhiteButton.swift in Sources */,
-				B08C14E1202CDF9B0061819B /* StudentTableViewCell.swift in Sources */,
 				B08C14E8202CE5EF0061819B /* Post.swift in Sources */,
-				B07E770F222764A800DF0BA8 /* SeeNewPostsButton.swift in Sources */,
 				B0330FFE2031700E00FE2203 /* ImageService.swift in Sources */,
+				4761621C22AA12D300B423BA /* LoadingCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
