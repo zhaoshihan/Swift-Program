@@ -11,39 +11,45 @@ import UIKit
 import Firebase
 
 protocol NewPostVCDelegate {
-    func didUploadPost(withStudentName studentName:String)
+    func didUploadPost(withID id:String)
 }
 
 class NewPostViewController:UIViewController, UITextViewDelegate {
     
-    @IBOutlet weak var textView:UITextView!
-    @IBOutlet weak var placeHolderLabel: UILabel!
     
     @IBOutlet weak var cancelButton: UIBarButtonItem!
     @IBOutlet weak var doneButton: UIButton!
+    
+    @IBOutlet weak var StudentName: UITextField!
+    @IBOutlet weak var StudentID: UITextField!
+    @IBOutlet weak var Academy: UITextField!
+    @IBOutlet weak var IDCard: UITextField!
+    @IBOutlet weak var BirthPlace: UITextField!
+    @IBOutlet weak var Telephone: UITextField!
+    @IBOutlet weak var Email: UITextField!
     
     var delegate:NewPostVCDelegate?
     
     @IBAction func handlePostButton() {
         
-        guard let userProfile = UserService.currentUserProfile else { return }
         // Firebase code here
-        
-        let postRef = Database.database().reference().child("students").childByAutoId()
+        let studentName = StudentName.text!
+        let postRef = Database.database().reference().child("students/\(studentName)")
         
         let postObject = [
-            "author": [
-                "uid": userProfile.uid,
-                "username": userProfile.username,
-                "photoURL": userProfile.photoURL.absoluteString
-            ],
-            "text": textView.text,
-            "timestamp": [".sv":"timestamp"]
-        ] as [String:Any]
+            "studentName": StudentName.text!,
+            "studentID": StudentID.text!,
+            "academy": Academy.text!,
+            "IDCard": IDCard.text!,
+            "birthplace": BirthPlace.text!,
+            "telephone": Telephone.text!,
+            "email": Email.text!,
+            "grades":[String : Any]()
+            ] as [String:Any]
         
         postRef.setValue(postObject, withCompletionBlock: { error, ref in
             if error == nil {
-                self.delegate?.didUploadPost(withStudentName: ref.key ?? "")
+                self.delegate?.didUploadPost(withID: ref.key!)
                 self.dismiss(animated: true, completion: nil)
             } else {
                 // Handle the error
@@ -56,12 +62,12 @@ class NewPostViewController:UIViewController, UITextViewDelegate {
     }
     
     override func dismiss(animated flag: Bool, completion: (() -> Void)? = nil) {
-        textView.resignFirstResponder()
+        // textView.resignFirstResponder()
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.25, execute: {
             super.dismiss(animated: flag, completion: completion)
         })
     }
-
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -72,20 +78,18 @@ class NewPostViewController:UIViewController, UITextViewDelegate {
         doneButton.layer.cornerRadius = doneButton.bounds.height / 2
         doneButton.clipsToBounds = true
         
-        textView.delegate = self
+        // textView.delegate = self
         
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        textView.becomeFirstResponder()
+        // textView.becomeFirstResponder()
         
         // Remove the nav shadow underline
         navigationController?.navigationBar.shadowImage = UIImage()
     }
-    
-    func textViewDidChange(_ textView: UITextView) {
-        placeHolderLabel.isHidden = !textView.text.isEmpty
-    }
 }
+
+
 

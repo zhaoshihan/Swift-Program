@@ -48,7 +48,7 @@ class StudentHomeViewController:UIViewController, UITableViewDelegate, UITableVi
         tableView.dataSource = self
         tableView.reloadData()
         
-//        observePosts()
+        observePosts()
         
     }
     
@@ -60,19 +60,19 @@ class StudentHomeViewController:UIViewController, UITableViewDelegate, UITableVi
             var tempPosts = [Student]()
             
             for child in snapshot.children {
-                if let childSnapshot = child as? DataSnapshot,
-                    let dict = childSnapshot.value as? [String:Any],
+                if let childSnapshot = child as? DataSnapshot
+                {
+                    let dict = childSnapshot.value as? [String:Any]
+                    let studentName = dict?["studentName"] as? String
+                    let studentID = dict?["studentID"] as? String
+                    let academy = dict?["academy"] as? String
+                    let IDCard = dict?["IDCard"] as? String
+                    let birthplace = dict?["birthplace"] as? String
+                    let telephone = dict?["telephone"] as? String
+                    let email = dict?["email"] as? String
+                    let grades = dict?["grades"] as? [String:Any] ?? [String:Any]()
                     
-                    let studentName = dict["studentName"] as? String,
-                    let studentID = dict["studentID"] as? String,
-                    let academy = dict["academy"] as? String,
-                    let IDCard = dict["IDCard"] as? String,
-                    let birthplace = dict["birthplace"] as? String,
-                    let telephone = dict["telephone"] as? String,
-                    let email = dict["email"] as? String,
-                    let grades = dict["grades"] as? [String:Any]{
-                    
-                    let student = Student(studentName: studentName, studentID: studentID, academy: academy, IDCard: IDCard, birthplace: birthplace, telephone: telephone, email: email, grades: grades)
+                    let student = Student(studentName: studentName!, studentID: studentID!, academy: academy!, IDCard: IDCard!, birthplace: birthplace!, telephone: telephone!, email: email!, grades: grades)
                     tempPosts.append(student)
                 }
             }
