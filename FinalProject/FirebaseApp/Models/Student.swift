@@ -1,8 +1,8 @@
 //
 //  Student.swift
-//  FinalProject
+//  FirebaseApp
 //
-//  Created by 赵世晗 on 2019/5/23.
+//  Created by 赵世晗 on 2019/6/1.
 //  Copyright © 2019 Robert Canton. All rights reserved.
 //
 

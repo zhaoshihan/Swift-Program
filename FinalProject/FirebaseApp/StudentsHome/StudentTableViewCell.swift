@@ -1,9 +1,9 @@
 //
-//  PostTableViewCell.swift
-//  FirebaseApp
+//  StudentTableViewController.swift
+//  FinalProject
 //
-//  Created by Robert Canton on 2018-02-08.
-//  Copyright © 2018 Robert Canton. All rights reserved.
+//  Created by 赵世晗 on 2019/6/7.
+//  Copyright © 2019 Robert Canton. All rights reserved.
 //
 
 import UIKit
@@ -20,7 +20,8 @@ class StudentTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        
+//        self.backgroundColor = UIColor(red: 131/255, green: 129/255, blue: 205, alpha: 0.5)
+
         profileImageView.layer.cornerRadius = profileImageView.bounds.height / 2
         profileImageView.clipsToBounds = true
     }

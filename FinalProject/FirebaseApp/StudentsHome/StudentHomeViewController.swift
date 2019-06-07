@@ -1,9 +1,9 @@
 //
-//  HomeViewController.swift
-//  FirebaseApp
+//  StudentHomeViewController.swift
+//  FinalProject
 //
-//  Created by Robert Canton on 2018-02-02.
-//  Copyright © 2018 Robert Canton. All rights reserved.
+//  Created by 赵世晗 on 2019/6/7.
+//  Copyright © 2019 Robert Canton. All rights reserved.
 //
 
 import Foundation
@@ -22,11 +22,13 @@ class StudentHomeViewController:UIViewController, UITableViewDelegate, UITableVi
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.addVerticalGradientLayer(topColor: primaryColor, bottomColor: secondaryColor)
+        
         tableView = UITableView(frame: view.bounds, style: .plain)
         
         let cellNib = UINib(nibName: "StudentTableViewCell", bundle: nil)
         tableView.register(cellNib, forCellReuseIdentifier: "studentCell")
-        tableView.backgroundColor = UIColor(white: 0.90,alpha:1.0)
+        tableView.backgroundColor = UIColor(white: 0.1, alpha:0)
         view.addSubview(tableView)
         
         var layoutGuide:UILayoutGuide!

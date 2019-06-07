@@ -1,9 +1,9 @@
 //
-//  ScoreTableViewCell.swift
-//  FinalWork
+//  ScoreTableViewController.swift
+//  FinalProject
 //
-//  Created by alu on 2019/5/25.
-//  Copyright © 2019年 alu. All rights reserved.
+//  Created by 赵世晗 on 2019/6/7.
+//  Copyright © 2019 Robert Canton. All rights reserved.
 //
 
 import UIKit
@@ -16,11 +16,11 @@ class ScoreTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+//        self.backgroundColor = UIColor(red: 131/255, green: 129/255, blue: 205, alpha: 0.5)
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
         // Configure the view for the selected state
     }
     

@@ -801,6 +801,7 @@
                     <nil name="viewControllers"/>
                     <connections>
                         <segue destination="I0f-Y9-5pE" kind="relationship" relationship="rootViewController" id="OcY-LA-01u"/>
+                        <segue destination="8X6-GZ-8C0" kind="show" id="GIa-2h-thC"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vWe-dG-dFu" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -1,9 +1,9 @@
 //
 //  NewPostViewController.swift
-//  FirebaseApp
+//  FinalProject
 //
-//  Created by Robert Canton on 2018-02-09.
-//  Copyright © 2018 Robert Canton. All rights reserved.
+//  Created by 赵世晗 on 2019/6/7.
+//  Copyright © 2019 Robert Canton. All rights reserved.
 //
 
 import Foundation
@@ -71,6 +71,7 @@ class NewPostViewController:UIViewController, UITextViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.addVerticalGradientLayer(topColor: primaryColor, bottomColor: secondaryColor)
         
         cancelButton.tintColor = secondaryColor
         

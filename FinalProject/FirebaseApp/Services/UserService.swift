@@ -2,8 +2,8 @@
 //  UserService.swift
 //  FirebaseApp
 //
-//  Created by Robert Canton on 2018-02-09.
-//  Copyright © 2018 Robert Canton. All rights reserved.
+//  Created by 赵世晗 on 2019/6/1.
+//  Copyright © 2019 Robert Canton. All rights reserved.
 //
 
 import Foundation

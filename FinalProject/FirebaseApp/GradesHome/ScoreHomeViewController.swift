@@ -47,15 +47,12 @@ class ScoreHomeViewController:UIViewController, UITableViewDelegate, UITableView
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.addVerticalGradientLayer(topColor: primaryColor, bottomColor: secondaryColor)
         
         let cellNib = UINib(nibName: "ScoreTableViewCell", bundle: nil)
         tableView.register(cellNib, forCellReuseIdentifier: "scoreCell")
         
-//        tableView.register(ScoreTableViewCell.self, forCellReuseIdentifier: ScoreHomeViewController.scoreCellIdentifier)
-//        let xib = UINib(nibName:"ScoreTableViewCell",bundle:nil)
-//        tableView.register(xib, forCellReuseIdentifier: ScoreHomeViewController.scoreCellIdentifier)
-        
-        tableView.backgroundColor = UIColor(white: 0.90,alpha:1.0)
+        tableView.backgroundColor = UIColor(white: 0.1, alpha:0)
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = 67
         
